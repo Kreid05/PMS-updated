@@ -1,0 +1,244 @@
+/* Facility Modal */
+.facility-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.facility-modal-content {
+  background-color: white;
+  border-radius: 8px;
+  padding: 30px;
+  width: 600px; /* Set a fixed width */
+  max-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stepper Header */
+.facility-modal-content h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form Group */
+.facility-form .facility-form-group {
+  margin-bottom: 15px;
+}
+
+.facility-form label {
+  display: block;
+  margin-top: 5px;
+}
+
+.facility-form input,
+.facility-form select,
+.facility-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.facility-form textarea {
+  resize: none;
+  height: 80px;
+}
+
+/* Radio Button Group */
+.facility-form-group div {
+  display: flex;
+  align-items: center;
+}
+
+.facility-form-group > div > label {
+  margin-bottom: 10px; /* Adjust this value as needed */
+  display: flex; /* Ensures the margin applies properly */
+}
+
+.facility-form-group input[type="radio"] {
+  margin-right: 10px;
+  width: 20px;  /* Adjust size */
+  height: 20px;  /* Adjust size */
+  border-radius: 50%;  /* Make the radio button circular */
+  border: 2px solid #ccc;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.facility-form-group input[type="radio"]:checked {
+  background-color: #18304A;  /* Blue when checked */
+  border-color: #ccc;  /* Blue border when checked */
+  border-width: 3px;
+}
+
+/* File Input */
+.facility-form-group input[type="file"] {
+  padding: 5px;
+  border: none;
+}
+
+/* Stepper Navigation */
+.facility-form-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Buttons */
+.facility-submit-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #18304A;
+    color: white;
+}
+
+.facility-cancel-button, 
+.facility-back-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.facility-submit-button:hover {
+  background-color: #0056b3;
+}
+
+.facility-cancel-button:hover
+.facility-back-button:hover {
+  background-color: #5a6268;
+}
+
+/* Time Input Field */
+.time-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.time-input input {
+  width: 60px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* New Fields Styles for Operational Management */
+.facility-form-group select {
+  margin-bottom: 15px;
+}
+
+.facility-form-group input[type="text"] {
+  margin-bottom: 15px;
+}
+
+/* Operational Days Dropdown */
+.facility-form-group label {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* Pricing Field */
+.facility-form-group input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+/* Facility Pricing Section */
+.facility-form-group {
+  margin-bottom: 20px;
+}
+
+/* Stepper */
+.facility-stepper {
+  display: flex;
+  justify-content: center;
+  gap: 37px; /* Reduced gap to make the line appear more aligned */
+  margin-bottom: 20px;
+  position: relative; /* Needed for the line position */
+}
+
+.facility-step {
+  text-align: center;
+  flex: .5;
+  position: relative; /* To align the line with the step */
+}
+
+.facility-step:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 22%;
+  left: 63.5%;
+  width: 100%;
+  height: 2px;
+  background-color: #ccc; /* Line color */
+  transform: translateY(-50%);
+}
+
+.facility-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px auto;
+  font-weight: bold;
+}
+
+.facility-step p {
+  font-size: 14px;
+  color: #333;
+}
+
+.facility-step.active .facility-circle {
+  background-color: #18304A; /* Active step color */
+}
+
+.facility-step.active p {
+  color: #333;
+}
+
+.facility-step:not(.active) .facility-circle {
+  background-color: #ccc;
+  color: gray;
+}
+
+.input-default {
+  border: 1px solid gray; /* Default gray border */
+}
+
+.input-error {
+  border: 1px solid red; /* Red border if validation fails */
+}
+
+.input-success {
+  border: 1px solid green; /* Green border if validation is successful */
+}
+
+/* Optional: To style the error message */
+.facility-error-message {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
