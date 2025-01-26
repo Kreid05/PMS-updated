@@ -140,7 +140,7 @@ const Room = () => {
       <div className="room-filters">
         {activeTab === "room" && (
           <>
-            <div className="filter-by">
+            <div className="room-filter-by">
               <h2>Filter By:</h2>
             </div>
 
@@ -175,7 +175,7 @@ const Room = () => {
                   value={startDate}
                   onChange={handleStartDateChange}
                 />
-                <span className="date-separator">-</span>
+                
                 <input
                   type="date"
                   id="end-date"

@@ -24,13 +24,22 @@
   font-size: 14px;
 }
 
+.room-filters .room-filter-by {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 150px;
+  margin-top:1rem;
+}
 .room-filters .filter-by {
   display: flex;
   align-items: center;
   gap: 10px;
   font-weight: bold;
+  font-size: 150px;
+  margin-top:1rem;
 }
-
 
 .filter-option label {
   margin-right: 10px;
@@ -43,7 +52,7 @@
 }
 
 .room-container .room-filters select {
-  padding: 10px 15px;
+  padding: 5px 15px;
   font-size: 14px;     
   height: 38px;         
   border: 1px solid #ddd;
@@ -70,6 +79,7 @@
   height: 40px;
   width: 100%;
   max-width: 100px;
+  margin-top: 12px;;
   border-radius: 10px;
 
 }
@@ -96,8 +106,8 @@
   padding: 8px 12px;  
   font-size: 14px;      
   border: 2px solid #ddd; 
-  border-radius: 4px;  
-  width: 250px; 
+  border-radius: 15px;  
+  width: 330px; 
   height: 38px;         
   transition: border-color 0.3s ease; 
 }
@@ -106,6 +116,8 @@
   display: flex;
   justify-content: flex-start;
   margin-top: 35px; 
+  border-radius: 10px;
+
 }
 
 
@@ -127,16 +139,15 @@
 .date-range-inputs {
   display: flex;
   align-items: center;
-  gap: 10px; 
 }
 
 .date-range-inputs input {
   font-size: 15px; 
   padding: 10px; 
-  height: 40px; 
-  border: 1px solid #ccc; 
-  border-radius: 10px; 
+  height: 40px;   
   outline: none;
+  margin-top:3.5px;
+  
 }
 
 .date-range-inputs input:focus {
@@ -145,9 +156,9 @@
 }
 
 .date-separator {
-  margin: 0 10px; 
+  margin: 0 0 5 px; 
   color: #333; 
-  font-size: 1rem; 
+  font-size: 15px; 
   font-weight: bold; 
 }
 
@@ -162,8 +173,9 @@
   font-size: 16px;
   border-radius: 10px;
   height: 50px;
-  width: 100%; 
+  width: 15 0%; 
   max-width: 120px; 
+  margin-top: 3px;
 }
 
   
@@ -177,7 +189,7 @@
   border-radius: 10px;
   margin-top: 28px;
   height: 50px;
-  margin-left: auto; 
+  margin-left: 10px; 
   display: block;
   width: max-con  tent;
 }

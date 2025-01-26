@@ -254,9 +254,9 @@ const AddFacilityModal = ({ isModalOpen, handleCloseModal }) => {
                     className={getInputClass("existingCategory")}
                   >
                     <option value="">Facility Category</option>
-                    <option value="pool">Pool</option>
-                    <option value="gym">Gym</option>
-                    <option value="spa">Spa</option>
+                    <option value="pool">Food</option>
+                    <option value="gym">Wellness</option>
+                    <option value="spa">Recreational</option>
                   </select>
                 </div>
               )}

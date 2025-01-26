@@ -200,16 +200,16 @@ aside .sidebar a:hover span {
 
 
 .header {
-    height: auto; /* Allow it to grow based on the content */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: transparent;
+    position: relative; /* Allows finer control for child positioning */
 }
 
 .header .header-title {
-    font-size: 4rem;  /* Adjust this value as needed */
+    font-size: 4rem; /* Adjust this value as needed */
     font-weight: 1000;
     color: #18304A;
     text-transform: uppercase;
@@ -223,7 +223,34 @@ aside .sidebar a:hover span {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    margin-right: 1rem;
+    position: absolute; /* Positioning relative to the header */
+    right: 150px; /* Adjust for desired distance from the right edge */
+    top: 50%; /* Vertically center */
+    transform: translateY(-50%); /* Correct centering due to absolute positioning */
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Adds spacing between profile image and text */
+}
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right; /* Align text to the right */
+}
+
+.profile-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--dark_blue);
+}
+
+.profile-role {
+    font-size: 1rem;
+    color: var(--dark_blue);
 }
 
 .profile-img {
@@ -233,33 +260,3 @@ aside .sidebar a:hover span {
     cursor: pointer;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    right: 0;
-    background-color: var(--secondary);
-    min-width: 100px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.profile-dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.logout-btn {
-    background: none;
-    border: none;
-    color: var(--text);
-    padding: 0.5rem 1rem;
-    width: 100%;
-    text-align: left;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-.logout-btn:hover {
-    background-color: var(--background);
-}

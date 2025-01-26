@@ -215,16 +215,7 @@ const Booking = () => {
                 </select>
               </div>
 
-              {/* Search Filter */}
-              <div className="filter-item">
-                <input
-                  type="text"
-                  id="search"
-                  value={searchQuery}
-                  onChange={(e) => setSearchQuery(e.target.value)}
-                  placeholder="Search by guest name, room number, or ID"
-                />
-              </div>
+
 
               {/* Create Booking Button */}
               <div className="create-booking-button">
